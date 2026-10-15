@@ -1,5 +1,11 @@
 # Deploy Tailor Ledger to Vercel
 
+Current deployed URL: https://tailor-ledger9xxe.vercel.app
+
+The local frontend now includes the monochrome redesign, mobile logout and iPhone scrolling corrections. Redeploy this folder to the existing Vercel project to publish those changes; the local changes do not automatically update the deployed URL.
+
+Supabase billing `APP_URL` and `ALLOWED_ORIGINS` are configured for this address, with localhost retained for development. The deployed homepage, JavaScript, CSS and photo returned HTTP 200, and billing CORS accepts this origin. Set Supabase Authentication Site URL to this address and add `https://tailor-ledger9xxe.vercel.app/**` to Redirect URLs.
+
 The `vercel-frontend` folder is the complete prebuilt frontend. It contains HTML, CSS, bundled JavaScript, an Unsplash photo and Vercel configuration. It does not contain database credentials, payment secrets, backend source, or node_modules.
 
 ## Deploy using the Vercel CLI
