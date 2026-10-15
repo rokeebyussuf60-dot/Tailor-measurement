@@ -2,7 +2,7 @@
 
 Current deployed URL: https://tailor-ledger9xxe.vercel.app
 
-The local frontend now includes the monochrome redesign, mobile logout and iPhone scrolling corrections. Redeploy this folder to the existing Vercel project to publish those changes; the local changes do not automatically update the deployed URL.
+The local frontend now includes the monochrome redesign, sticky mobile topbar/logout, iPhone scrolling corrections and expanded WhatsApp messaging tools. Redeploy this folder to the existing Vercel project to publish those changes; the local changes do not automatically update the deployed URL.
 
 Supabase billing `APP_URL` and `ALLOWED_ORIGINS` are configured for this address, with localhost retained for development. The deployed homepage, JavaScript, CSS and photo returned HTTP 200, and billing CORS accepts this origin. Set Supabase Authentication Site URL to this address and add `https://tailor-ledger9xxe.vercel.app/**` to Redirect URLs.
 
