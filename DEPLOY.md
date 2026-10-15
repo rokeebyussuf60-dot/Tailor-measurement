@@ -4,6 +4,10 @@ Current deployed URL: https://tailor-ledger9xxe.vercel.app
 
 The local frontend now includes the monochrome redesign, sticky mobile topbar/logout, iPhone scrolling corrections and expanded WhatsApp messaging tools. Redeploy this folder to the existing Vercel project to publish those changes; the local changes do not automatically update the deployed URL.
 
+Latest update: pickup/fitting buttons now guide missing order setup, modal warnings are visible, and Back navigation is available on workspace pages and dialogs.
+
+Mobile navigation is now in a sticky hamburger menu. WhatsApp drafts include phone-default/Business, Android Business targeting and WhatsApp Web options. Redeploy this folder to publish the update.
+
 Supabase billing `APP_URL` and `ALLOWED_ORIGINS` are configured for this address, with localhost retained for development. The deployed homepage, JavaScript, CSS and photo returned HTTP 200, and billing CORS accepts this origin. Set Supabase Authentication Site URL to this address and add `https://tailor-ledger9xxe.vercel.app/**` to Redirect URLs.
 
 The `vercel-frontend` folder is the complete prebuilt frontend. It contains HTML, CSS, bundled JavaScript, an Unsplash photo and Vercel configuration. It does not contain database credentials, payment secrets, backend source, or node_modules.
