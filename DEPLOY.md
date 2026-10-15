@@ -24,7 +24,7 @@ From `C:\Users\USER\Documents\Tailors measurement` run:
 npx.cmd --yes vercel .\vercel-frontend --prod
 ```
 
-Sign in to your Vercel account when prompted. Create a new Vercel project and use the existing settings in `vercel.json`: framework Other, no build command, output directory `.`. No frontend environment variables are required for this prebuilt folder.
+Sign in to your Vercel account when prompted and select your existing Tailor Ledger project. Use the settings in `vercel.json`: framework Other, no build command, output directory `.`. No frontend environment variables are required for this prebuilt folder.
 
 Alternatively, put the contents of `vercel-frontend` in a Git repository and import that repository into Vercel. If using this whole workspace as a repository, choose `vercel-frontend` as the project's Root Directory. Keep backend files and secrets out of that frontend repository.
 
@@ -47,3 +47,11 @@ npm.cmd run build
 ```
 
 This writes the JavaScript bundle directly into the single `vercel-frontend` folder. Local preview serves this same folder. Edit HTML, CSS and assets here; no duplicate `dist` folder or ZIP is generated. Redeploy this folder to publish changes. No Vercel deployment has been performed on your behalf.
+
+## Install as an app
+
+After redeploying, open the HTTPS website. On Android or desktop, use **Install app** (or the browser's install menu). On iPhone, open it in Safari and choose **Share → Add to Home Screen**, enabling **Open as Web App** if shown. The icon opens Tailor Ledger in its own app window on supported browsers.
+
+Installation does not require a new Supabase setup or an app-store release. Records still require an internet connection. When disconnected, reopening the app shows a reconnect screen; customer records, login pages, admin reports and API responses are never stored in the service worker's offline cache. Unsaved forms are not queued for later submission.
+
+The service worker updates without forcing a reload during data entry. After a deployment, close all Tailor Ledger windows and reopen the app to activate a waiting worker update. HTTPS is required outside localhost.
