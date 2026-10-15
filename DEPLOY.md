@@ -8,6 +8,8 @@ Latest update: pickup/fitting buttons now guide missing order setup, modal warni
 
 Mobile navigation is now in a sticky hamburger menu. WhatsApp drafts include phone-default/Business, Android Business targeting and WhatsApp Web options. Redeploy this folder to publish the update.
 
+Registration now calls the deployed `register-account` function to reject reused email addresses with a clear warning. The private lookup migration has been applied; redeploy this frontend folder to publish the new sign-up behaviour.
+
 Supabase billing `APP_URL` and `ALLOWED_ORIGINS` are configured for this address, with localhost retained for development. The deployed homepage, JavaScript, CSS and photo returned HTTP 200, and billing CORS accepts this origin. Set Supabase Authentication Site URL to this address and add `https://tailor-ledger9xxe.vercel.app/**` to Redirect URLs.
 
 The `vercel-frontend` folder is the complete prebuilt frontend. It contains HTML, CSS, bundled JavaScript, an Unsplash photo and Vercel configuration. It does not contain database credentials, payment secrets, backend source, or node_modules.
